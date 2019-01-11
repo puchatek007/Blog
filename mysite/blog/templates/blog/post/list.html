@@ -18,5 +18,5 @@
 
         {{ post.body|truncatechars:30|linebreaks }}
     {% endfor %}
-
+    {% include "pagination.html" with page=page_obj %}
 {% endblock %}
