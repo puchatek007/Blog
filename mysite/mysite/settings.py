@@ -27,7 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
 
 INSTALLED_APPS = (
@@ -101,3 +100,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
+
+EMAIL_HOST = 'smtp.wp.pl'
+EMAIL_HOST_USER = 'test.django'
+EMAIL_HOST_PASSWORD = 'Testpassword123'
+EMAIL_PORT = 465
+EMAIL_USE_SSL= True
